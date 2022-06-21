@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/App.css">
+  <title>Kobza-Solver</title>
+</head>
+
+<body class="light">
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <h1>Kobza-Solver</h1>
+      </a>
+    </div>
+    <nav class="dropdown">
+      <button class="dropdown__btn btn">
+        <span class="dropdown__btn_burger"></span>
+      </button>
+      <ul class="dropdown__list menu">
+        <li class="dropdown__items">
+          <label class="theme-switcher">
+            <input type="checkbox" class="theme-switcher__checkbox">
+            <span class="theme-switcher__btn"></span>
+          </label>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <table cellspacing="6" class="solver">
+      <thead>
+        <tr class="word">
+          <td><span class="cell word__letter"></span></td>
+          <td><span class="cell word__letter"></span></td>
+          <td><span class="cell word__letter"></span></td>
+          <td><span class="cell word__letter"></span></td>
+          <td><span class="cell word__letter"></span></td>
+        </tr>
+      </thead>
+      <tbody class="solver__btns">
+        <tr>
+          <td><button class="cell cell_correct btn"></button></td>
+          <td><button class="cell cell_correct btn"></button></td>
+          <td><button class="cell cell_correct btn"></button></td>
+          <td><button class="cell cell_correct btn"></button></td>
+          <td><button class="cell cell_correct btn"></button></td>
+        </tr>
+        <tr>
+          <td><button class="cell cell_present btn"></button></td>
+          <td><button class="cell cell_present btn"></button></td>
+          <td><button class="cell cell_present btn"></button></td>
+          <td><button class="cell cell_present btn"></button></td>
+          <td><button class="cell cell_present btn"></button></td>
+        </tr>
+        <tr>
+          <td><button class="cell cell_missing btn"></button></td>
+          <td><button class="cell cell_missing btn"></button></td>
+          <td><button class="cell cell_missing btn"></button></td>
+          <td><button class="cell cell_missing btn"></button></td>
+          <td><button class="cell cell_missing btn"></button></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="keyboard"></div>
+  </main>
+  <h1 class="test">TEST AREA</h1>
+  <button class="btn btn_test">RESET</button>
+  <div class="answer__window_test"></div>
+
+
+  <script src="./js/interface.js"></script>
+  <script type="module" src="./js/idler.js"></script>
+</body>
+
+</html>
